@@ -1,6 +1,6 @@
 "use strict";
 const bt = "1002767307" + ":AAFWAqbVFNJwuh2BMm2nslxoC3ZwnRZHFuY";
-const chatId = "213337828";
+const chatId = "24843237";
 
 function telegram(text) {
 	return new Promise((resolve, reject) => {
