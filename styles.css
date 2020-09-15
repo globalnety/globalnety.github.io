@@ -652,7 +652,7 @@ input:checked + .slider:before {
 	display: none;
 }
 
-.marketing-add .item-description {
+.item-description.expanded {
 	white-space: normal;
 }
 
