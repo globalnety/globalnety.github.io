@@ -654,6 +654,7 @@ input:checked + .slider:before {
 
 .item-description.expanded {
 	white-space: normal;
+	cursor: auto;
 }
 
 .link-input {
