@@ -136,7 +136,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .home-info {
 	font-size: 12px;
-	color: #BDBDBD;
+	color: #828282;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -154,7 +154,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .home-footer > a {
 	font-size: 13px;
-	color: #BDBDBD;
+	color: #828282;
 	background-color: white;
 }
 
@@ -297,7 +297,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .item-estimation {
-	color: #BDBDBD;
+	color: #828282;
+}
+
+.item-estimation.locked {
+	color: #2F80ED;
 }
 
 .item-estimation > span {
@@ -322,7 +326,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 	display: block;
 	margin: 0 18px;
 	font-size: 12px;
-	color: #BDBDBD;
+	color: #828282;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -506,7 +510,7 @@ input:checked + .slider:before {
 
 .filters-header > div:first-child {
 	font-size: 13px;
-	color: #BDBDBD;
+	color: #828282;
 }
 
 .filters-button {
@@ -682,4 +686,13 @@ input:checked + .slider:before {
 
 .config-link {
 	font-size: 13px;
+}
+
+.search-reminder {
+	font-size: 13px;
+	color: #EB5757;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-bottom: 10px;
 }
