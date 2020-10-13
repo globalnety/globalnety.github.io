@@ -28,7 +28,7 @@ button, label {
 	cursor: pointer;
 }
 
-body > main > header {
+body > main > header, .home-header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0; left: 0; right: 0;
@@ -45,20 +45,30 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .home-header {
-	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px;
+	background-color: white;
 }
 
-.home-content {
+.home-main {
 	position: fixed;
 	top: 0; bottom: 0; left: 0; right: 0;
 	overflow: auto;
+}
+
+.home-main > div {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.home-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: auto;
 }
 
 .big-logo {
@@ -143,24 +153,23 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .home-footer {
-	position: fixed;
+	position: -webkit-sticky;
+	position: sticky;
 	bottom: 0; left: 0; right: 0;
 	z-index: 2;
 	display: flex;
 	padding: 25px;
 	justify-content: space-between;
 	align-items: flex-end;
-}
-
-.home-footer > a {
-	font-size: 13px;
-	color: #828282;
 	background-color: white;
 }
 
-.home-footer > p {
-	font-size: 14px;
-	color: #EB5757;
+.home-footer > a {
+	font-size: 12px;
+	color: #828282;
+}
+
+.home-footer > a:last-child {
 	text-align: right;
 }
 
@@ -724,4 +733,18 @@ input:checked + .slider:before {
 .checkboxes input:checked + span {
 	color: white;
 	background-color: #2D9CDB;
+}
+
+.notifications-main {
+	display: table;
+	margin: auto;
+}
+
+.notifications-button {
+	margin: 0 21px 32px;
+}
+
+.home-info.highlight {
+	font-size: 13px;
+	color: #EB5757;
 }
