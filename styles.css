@@ -748,3 +748,9 @@ input:checked + .slider:before {
 	font-size: 13px;
 	color: #EB5757;
 }
+
+.legal-info {
+	margin: 12px;
+	font-size: 12px;
+	white-space: pre-line;
+}
