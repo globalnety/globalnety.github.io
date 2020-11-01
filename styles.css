@@ -183,7 +183,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .ordering {
 	display: flex;
 	align-items: flex-start;
-	padding: 12px;
+	padding: 12px 15px;
 	overflow: auto;
 	margin-bottom: 12px;
 }
@@ -489,7 +489,7 @@ input:checked + .slider:before {
 }
 
 .filters-section {
-	padding: 13px 25px;
+	padding: 13px 15px;
 	border-bottom: 1px solid #BDBDBD;
 }
 
@@ -508,6 +508,13 @@ input:checked + .slider:before {
 
 .filters-header > .button > *:not(span) {
 	font-size: 15px;
+}
+
+.filters-header > .button > span:first-child {
+	margin-right: 6px;
+}
+
+.filters-header > .button > span:last-child {
 	margin-left: 6px;
 }
 
@@ -605,7 +612,6 @@ input:checked + .slider:before {
 	grid-template-columns: minmax(min-content, max-content) max-content max-content;
 	font-size: 12px;
 	align-items: center;
-	justify-items: start;
 	grid-column-gap: 14px;
 	overflow: auto;
 }
@@ -613,6 +619,7 @@ input:checked + .slider:before {
 .interest-name {
 	padding: 20px 0;
 	border-bottom: 1px solid #BDBDBD;
+	color: #2F80ED;
 }
 
 .interest-name:first-child {
@@ -622,6 +629,11 @@ input:checked + .slider:before {
 .delete-button {
 	color: #EB5757;
 	font-size: 20px;
+}
+
+.interests-info {
+	font-size: 13px;
+	margin: 30px 0 33px;
 }
 
 .interests-info-link {
@@ -729,7 +741,7 @@ input:checked + .slider:before {
 	background-color: #2D9CDB;
 }
 
-.notifications-main {
+.info-main {
 	display: table;
 	margin: auto;
 }
@@ -747,4 +759,38 @@ input:checked + .slider:before {
 	margin: 12px;
 	font-size: 12px;
 	white-space: pre-line;
+}
+
+.subscription-price {
+	padding: 0 21px 23px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.subscription-price > p {
+	color: #828282;
+}
+
+.subscription-price > p:last-child {
+	margin-top: 18px;
+}
+
+.price-buttons {
+	display: flex;
+	margin-top: 8px;
+}
+
+.price-buttons > button {
+	display: block;
+	border: solid 1px black;
+	border-radius: 0;
+	outline: none;
+	font-weight: bold;
+	background-color: white;
+	padding: 9px 15px;
+}
+
+.price-buttons-space {
+	flex: 1;
+	max-width: 90px;
 }
