@@ -39,6 +39,10 @@ body > main > header {
 	font-weight: bold;
 }
 
+.is-hidden {
+	visibility: hidden;
+}
+
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
 	-webkit-appearance: none; 
   margin: 0; 
@@ -168,16 +172,25 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .main-header {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
 	align-items: center;
 	padding: 12px 15px;
 	border-bottom: 1px solid #BDBDBD;
 	background-color: white;
 }
 
+.main-header > :first-child {
+	justify-self: start;
+}
+
+.main-header > :last-child {
+	justify-self: end;
+}
+
 .header-logo {
 	font-size: 18px;
+	margin: 0 20px;
 }
 
 .ordering {
@@ -623,16 +636,13 @@ input:checked + .slider:before {
 	align-items: center;
 	grid-column-gap: 14px;
 	overflow: auto;
+	margin-top: -20px;
 }
 
 .interest-name {
 	padding: 20px 0;
 	border-bottom: 1px solid #BDBDBD;
 	color: #2F80ED;
-}
-
-.interest-name:first-child {
-	padding-top: 0;
 }
 
 .delete-button {
@@ -711,6 +721,10 @@ input:checked + .slider:before {
 
 .config-link {
 	font-size: 13px;
+}
+
+.config-icon {
+	font-size: 22px;
 }
 
 .search-reminder {
