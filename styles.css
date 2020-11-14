@@ -868,3 +868,34 @@ input:checked + .slider:before {
 .account-table > :nth-child(odd) {
 	color: black;
 }
+
+.carousel {
+	display: grid;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+@media (hover: hover) {
+	.carousel {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	
+	.carousel:hover {
+		color: rgba(0, 0, 0, 0.75);
+	}
+}
+
+.carousel > * {
+	grid-area: 1 / 1;
+}
+
+.carousel-arrows {
+	display: flex;
+	justify-content: space-between;
+	font-size: 35px;
+}
+
+.carousel-arrow {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
