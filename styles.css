@@ -871,7 +871,7 @@ input:checked + .slider:before {
 
 .carousel {
 	display: grid;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.65);
 }
 
 @media (hover: hover) {
@@ -880,7 +880,7 @@ input:checked + .slider:before {
 	}
 	
 	.carousel:hover {
-		color: rgba(0, 0, 0, 0.75);
+		color: rgba(0, 0, 0, 0.8);
 	}
 }
 
