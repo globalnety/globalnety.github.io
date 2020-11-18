@@ -20,6 +20,17 @@ input {
 	font-size: inherit;
 }
 
+::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+::-webkit-list-button {
+	display: none;
+	pointer-events: none;
+	width: 0;
+	visibility: hidden;
+}
+
 p > a {
 	color: #2F80ED;
 }
@@ -44,7 +55,7 @@ body > main > header {
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
-	-webkit-appearance: none; 
+	-webkit-appearance: none;
   margin: 0; 
 }
 
