@@ -39,6 +39,10 @@ button, label {
 	cursor: pointer;
 }
 
+datalist {
+	display: none;
+}
+
 body > main > header {
 	position: -webkit-sticky;
 	position: sticky;
