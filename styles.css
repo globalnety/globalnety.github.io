@@ -797,6 +797,8 @@ input:checked + .slider:before {
 @media (min-width: 600px) {
 .main-header > .config-link {
 	display: block;
+	justify-self: start;
+	margin-right: 30px;
 }
 .main-header > .config-icon {
 	display: none;
