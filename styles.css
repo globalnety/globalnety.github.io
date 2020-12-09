@@ -794,7 +794,7 @@ input:checked + .slider:before {
 	display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
 .main-header > .config-link {
 	display: block;
 }
