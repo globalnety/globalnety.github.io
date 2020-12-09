@@ -790,6 +790,19 @@ input:checked + .slider:before {
 	font-size: 22px;
 }
 
+.main-header > .config-link {
+	display: none;
+}
+
+@media (min-width: 700px) {
+.main-header > .config-link {
+	display: block;
+}
+.main-header > .config-icon {
+	display: none;
+}
+}
+
 .search-reminder {
 	font-size: 13px;
 	color: #EB5757;
