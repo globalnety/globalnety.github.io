@@ -694,7 +694,7 @@ input:checked + .slider:before {
 
 .interests-items {
 	display: grid;
-	grid-template-columns: minmax(min-content, max-content) max-content max-content;
+	grid-template-columns: minmax(min-content, max-content) max-content max-content max-content;
 	font-size: 12px;
 	align-items: center;
 	grid-column-gap: 14px;
@@ -710,6 +710,11 @@ input:checked + .slider:before {
 
 .delete-button {
 	color: #EB5757;
+	font-size: 20px;
+}
+
+.edit-button {
+	color: #BDBDBD;
 	font-size: 20px;
 }
 
